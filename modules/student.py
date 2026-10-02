@@ -24,6 +24,8 @@ class StudentClass:
     def set_username_and_password(self, email_address, password):
         self.email_address = email_address
         self.password = password
+
+        
         return self
 
     def set_personal_details(
@@ -46,6 +48,17 @@ class StudentClass:
         self.class_grade = class_grade
         self.board_curriculum = board_curriculum
         return self
+
+    def printBasicDetails(self):
+        print("Full Name:", self.full_name)
+        print("Date of Birth:", self.date_of_birth)
+        print("Gender:", self.gender)
+        print("Mobile Number:", self.mobile_number)
+        print("Email Address:", self.email_address)
+        print("Preferred Language:", self.preferred_language)
+        print("School/College Name:", self.school_college_name)
+        print("Class/Grade:", self.class_grade)
+        print("Board/Curriculum:", self.board_curriculum)
 
 
 studentclass = StudentClass
